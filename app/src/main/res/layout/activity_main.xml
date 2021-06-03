@@ -6,10 +6,12 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <include layout="@layout/custom_toolbar" />
+    <include
+        android:id="@+id/included_layout"
+        layout="@layout/custom_toolbar" />
 
     <Button
-        android:onClick="onButtonClicked"
+        android:id="@+id/button"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
